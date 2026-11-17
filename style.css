@@ -1,8 +1,17 @@
+:root {
+    --sky: #0b1026;
+    --box: #1c2541;
+    --text: #dbc7c7;
+    --accent: #da8181;
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.5;
     text-align: center;
     margin: 15px;
+    background-color: var(--sky);
+    color: var(--text);
 }
 
 main {
@@ -14,7 +23,7 @@ main {
 h1 {
     margin-bottom: 0.5em;
     text-align: center;
-    color: #da8181;
+    color: var(--accent);
 }
 
 .box {
@@ -36,7 +45,7 @@ nav a {
 
 nav a.current {
     font-weight: bold;
-    color: #da8181;
+    color: var(--accent);
 }
 
 .pic_left {
@@ -71,7 +80,7 @@ nav a.current {
     flex-direction: column;
     border: 1px solid #ccc;
     padding: 1rem;
-    background-color: #e7e2e2;
+    background-color: var(--box);
 }
 
 
