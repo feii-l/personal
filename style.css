@@ -14,3 +14,47 @@ h1 {
     margin-bottom: 0.5em;
     color: #da8181;
 }
+
+.box {
+    display: grid;
+    gap: 1rem;
+    grid-template-areas:
+        "picl blog picr nav"
+        "guestbook playlist playlist nav"
+        "guestbook decor decor nav"
+}
+
+nav {
+    grid-area: nav;
+}
+
+.pic_left {
+    grid-area: picl;
+}
+
+.pic_right {
+    grid-area: picr;
+}
+
+.blog_link {
+    grid-area: blog;
+}
+
+.guestbook {
+    grid-area: guestbook;
+}
+
+.playlist {
+    grid-area: playlist;
+}
+
+.decor {
+    grid-area: decor;
+}
+
+.box > div {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    background-color: #dcd7d7;
+}
+
