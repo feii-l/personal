@@ -13,5 +13,7 @@ for (const post of posts) {
     <p>${post.date}</p>
     <p>${post.text}</p>
   `;
-  postsBox.prepend(card);
+  postsBox.append(card);
 }
+
+// add posts in posts.json on the top (newest)
