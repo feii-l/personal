@@ -44,6 +44,11 @@ nav {
 nav a {
     text-decoration: none;
     color: var(--text);
+    transition: transform 0.2s;
+}
+
+nav a:hover {
+    transform: translateY(-5px);
 }
 
 nav a.current {
@@ -103,6 +108,11 @@ nav a.current {
     flex-wrap: wrap;
     background-color: var(--box);
     border-radius: 12px;
+    transition: transform 0.2s;
+}
+
+.box > div:not(.decor):not(.playlist):not(.pic_left):not(.pic_right):hover {
+    transform: translateY(-5px);
 }
 
 .box > .decor {
