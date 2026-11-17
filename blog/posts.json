@@ -1,6 +1,13 @@
 
 [
     {
+        "id": "second-post",
+        "title": "Fixes",
+        "date":"2026-11-17",
+        "text": "Hello! Some fixes and improvements have been made to this website. I have been working on it for a while now. I swear I will come back to this after my midterm. Can you believe they call it a midterm when it is legit almost the end of the quarter? So much to learn still, but at least I get to learn! Anyways, I will probably be working on a hobbies page next to document my hobbies :3"
+    },
+
+    {
         "id": "first-post",
         "title": "First Blog Post",
         "date": "2026-11-16",

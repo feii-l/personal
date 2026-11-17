@@ -139,6 +139,12 @@ nav h4 {
     padding: 0%;
 }
 
+.box > .posts {
+    border: none;
+    background: transparent;
+    padding: 0;
+}
+
 @media (max-width: 500px) {
     .box {
         grid-template-columns: 1fr;
@@ -225,6 +231,11 @@ nav h4 {
 
 .posts article {
     position: relative;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: var(--box);
 }
 
 .read_more::after {
@@ -233,7 +244,7 @@ nav h4 {
     inset: 0;
 }
 
-.posts:not(.single):hover {
+.posts:not(.single) article:hover {
     transform: translateY(-5px);
 }
 
