@@ -93,6 +93,9 @@ nav h4 {
 .playlist {
     min-height: 110px;
     grid-area: playlist;
+}
+
+.playlist iframe {
     display: block;
 }
 
