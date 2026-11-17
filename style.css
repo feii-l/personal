@@ -93,6 +93,7 @@ nav h4 {
 .playlist {
     min-height: 110px;
     grid-area: playlist;
+    display: block;
 }
 
 .decor {
@@ -128,7 +129,7 @@ nav h4 {
     background-color: transparent;
 }
 
-.box > .pic_left, .box > .pic_right {
+.box > .pic_left, .box > .pic_right, .box > .playlist {
     overflow: hidden;
     padding: 0%;
 }
