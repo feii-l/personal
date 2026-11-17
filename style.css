@@ -47,8 +47,9 @@ nav a {
     transition: transform 0.2s;
 }
 
-nav a:hover {
+nav a:hover::after {
     transform: translateX(5px);
+    content: " ✦";
 }
 
 nav a.current {
