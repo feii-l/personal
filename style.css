@@ -9,7 +9,8 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.5;
     text-align: center;
-    margin: 15px;
+    margin: 10px;
+    padding: 1ch;
     background-color: var(--sky);
     color: var(--text);
 }
@@ -81,6 +82,19 @@ nav a.current {
     border: 1px solid #ccc;
     padding: 1rem;
     background-color: var(--box);
+}
+
+@media (max-width: 500px) {
+    .box {
+        grid-template-areas:
+            "nav"
+            "picl"
+            "picr"
+            "blog"
+            "guestbook"
+            "playlist"
+            "decor";
+    }
 }
 
 
