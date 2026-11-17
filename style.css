@@ -2,7 +2,7 @@
     --sky: #0b1026;
     --box: #1c2541;
     --text: #dbc7c7;
-    --accent: #da8181;
+    --accent: #eabc93;
 }
 
 body {
@@ -76,12 +76,27 @@ nav a.current {
     grid-area: decor;
 }
 
+.circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
 .box > div, nav {
     display: flex;
     flex-direction: column;
     border: 1px solid #ccc;
     padding: 1rem;
     background-color: var(--box);
+    border-radius: 12px;
+}
+
+.box > .decor {
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;    
+    border: none;
+    background-color: transparent;
 }
 
 @media (max-width: 500px) {
@@ -135,11 +150,15 @@ nav a.current {
     border-radius: 50%;
     pointer-events: none;
     animation: ease-in-out twinkle 3s infinite;
+    z-index: -1;
 }
 
 @media (prefers-reduced-motion: reduce) {
     .drop {
         display: none;
+    }
+    .star {
+        animation: none;
     }
 }
 
