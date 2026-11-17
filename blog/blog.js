@@ -24,7 +24,7 @@ for (const post of posts) {
     if (post_id) {
         body = post.text;
     }   else {
-        body = `<a class="read_more" href="?post=${post.id}">${post.text.slice(0, 80)}...(read more & comment →)</a>`;
+        body = `<a class="read_more" href="?post=${post.id}">${post.text.slice(0, 80)}... (read more & comment →)</a>`;
     }
 
     card.innerHTML = `
@@ -37,6 +37,7 @@ for (const post of posts) {
 }
 
 if (post_id) {
+    postsBox.classList.add("single");
     const giscus = document.createElement("script");
     giscus.setAttribute("src", "https://giscus.app/client.js");
     giscus.setAttribute("data-repo", "feii-l/personal");

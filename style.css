@@ -233,6 +233,10 @@ nav h4 {
     inset: 0;
 }
 
+.posts:not(.single):hover {
+    transform: translateY(-5px);
+}
+
 .blog_link a {
     font-size: 0.8rem;
 }
