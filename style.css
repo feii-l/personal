@@ -45,10 +45,11 @@ nav a {
     text-decoration: none;
     color: var(--text);
     transition: transform 0.2s;
+    padding: 3px;
+    font-size: small;
 }
 
 nav a:hover::after {
-    transform: translateX(5px);
     content: " ✦";
 }
 
@@ -58,7 +59,8 @@ nav a.current {
 }
 
 nav h4 {
-    margin: 0.5px;
+    margin: 0.3rem;
+    border-bottom: dashed 1px var(--text);
 }
 
 .blog_link a {
