@@ -1,6 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.5;
+    text-align: center;
     margin: 15px;
 }
 
@@ -12,6 +13,7 @@ main {
 
 h1 {
     margin-bottom: 0.5em;
+    text-align: center;
     color: #da8181;
 }
 
@@ -25,14 +27,25 @@ h1 {
 }
 
 nav {
-    grid-area: nav;
+        grid-area: nav;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a.current {
+    font-weight: bold;
+    color: #da8181;
 }
 
 .pic_left {
+    min-height: 80px;
     grid-area: picl;
 }
 
 .pic_right {
+    min-height: 80px;
     grid-area: picr;
 }
 
@@ -45,6 +58,7 @@ nav {
 }
 
 .playlist {
+    min-height: 110px;
     grid-area: playlist;
 }
 
@@ -52,9 +66,12 @@ nav {
     grid-area: decor;
 }
 
-.box > div {
+.box > div, nav {
+    display: flex;
+    flex-direction: column;
     border: 1px solid #ccc;
     padding: 1rem;
-    background-color: #dcd7d7;
+    background-color: #e7e2e2;
 }
+
 
