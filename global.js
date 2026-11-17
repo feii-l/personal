@@ -6,7 +6,7 @@ console.log("SITE_ROOT:", SITE_ROOT);
 
 const pages = [
   {url: "", title: "Home首页"},
- //{url: "Favories收藏"}
+  {url: "blog/", title: "Blog博客"}
 ]
 console.log("Pages:", pages);
 
@@ -15,6 +15,11 @@ const box = document.querySelector(".box");
 box.append(nav);
 
 for (const page of pages) {
+    if (currentPath === SITE_ROOT.pathname && page.url === "blog/") {
+      console.log("Skipping link for Blog:", page.title);
+      continue;
+  }
+
   const link = document.createElement('a');
   link.href = new URL(page.url, SITE_ROOT).href;
   if (link.pathname === currentPath) {
