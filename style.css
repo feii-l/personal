@@ -56,6 +56,10 @@ nav a.current {
     color: var(--accent);
 }
 
+nav h4 {
+    margin: 0.5px;
+}
+
 .blog_link a {
     text-decoration: none;
     color: var(--text);

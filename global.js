@@ -14,6 +14,10 @@ const nav = document.createElement("nav");
 const box = document.querySelector(".box");
 box.append(nav);
 
+const navi = document.createElement("h4")
+navi.textContent = "Navigation导航"
+nav.append(navi)
+
 for (const page of pages) {
     if (currentPath === SITE_ROOT.pathname && page.url === "blog/") {
       console.log("Skipping link for Blog:", page.title);
