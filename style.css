@@ -223,6 +223,16 @@ nav h4 {
     font-size: 15px;
 }
 
+.posts article {
+    position: relative;
+}
+
+.read_more::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+}
+
 .blog_link a {
     font-size: 0.8rem;
 }

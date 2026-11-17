@@ -24,7 +24,7 @@ for (const post of posts) {
     if (post_id) {
         body = post.text;
     }   else {
-        body = `<a href="?post=${post.id}">${post.text.slice(0, 80)}...(read more & comment →)</a>`;
+        body = `<a class="read_more" href="?post=${post.id}">${post.text.slice(0, 80)}...(read more & comment →)</a>`;
     }
 
     card.innerHTML = `
