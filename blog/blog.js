@@ -14,11 +14,25 @@ for (const post of posts) {
 
     const card = document.createElement("article");
 
+    // card.innerHTML = `
+    // <h2> <a href="?post=${post.id}">${post.title}</a></h2>
+    // <p>${post.date}</p>
+    // <p>${post.text}</p>
+    // `;
+
+    let body;
+    if (post_id) {
+        body = post.text;
+    }   else {
+        body = `<a href="?post=${post.id}">${post.text.slice(0, 80)}...(read more & comment →)</a>`;
+    }
+
     card.innerHTML = `
     <h2> <a href="?post=${post.id}">${post.title}</a></h2>
     <p>${post.date}</p>
-    <p>${post.text}</p>
+    <p>${body}</p>
     `;
+
     postsBox.append(card);
 }
 

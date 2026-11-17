@@ -219,6 +219,10 @@ nav h4 {
     color: var(--text);
 }
 
+.posts h2 {
+    font-size: 15px;
+}
+
 .blog_link a {
     font-size: 0.8rem;
 }
