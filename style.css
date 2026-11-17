@@ -86,7 +86,8 @@ nav a.current {
     display: flex;
     flex-direction: column;
     border: 1px solid #ccc;
-    padding: 1rem;
+    padding: 1ch;
+    flex-wrap: wrap;
     background-color: var(--box);
     border-radius: 12px;
 }
