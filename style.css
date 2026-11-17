@@ -120,6 +120,7 @@ nav a.current {
     top: 0;
     left: 50%;
     animation: fall 1s linear infinite;
+    pointer-events: none;
 }
 
 
